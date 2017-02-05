@@ -36,6 +36,6 @@ Of course there are many things that have to be done. So, for now this is a shor
 
 ## Screenshots:
 
-![Login](login.png) 
+![Login](login.PNG) 
 ![photos_preview](photos_preview.png)
 ![single_photo](single_photo.png)
