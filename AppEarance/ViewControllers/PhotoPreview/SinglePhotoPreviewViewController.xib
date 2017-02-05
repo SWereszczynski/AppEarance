@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SinglePhotoPreviewViewController" customModule="AppEarance" customModuleProvider="target">
+            <connections>
+                <outlet property="photoImageView" destination="3Sq-KY-8BG" id="jyG-Y1-kga"/>
+                <outlet property="scrollView" destination="Unm-0p-2ud" id="UIv-0m-hKU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Unm-0p-2ud">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Sq-KY-8BG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="G6t-sZ-4JX">
+                            <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3Sq-KY-8BG" secondAttribute="trailing" id="91q-mV-JBd"/>
+                        <constraint firstItem="3Sq-KY-8BG" firstAttribute="leading" secondItem="Unm-0p-2ud" secondAttribute="leading" id="Ll5-aM-uVg"/>
+                        <constraint firstItem="3Sq-KY-8BG" firstAttribute="top" secondItem="Unm-0p-2ud" secondAttribute="top" id="SQv-Ix-9yI"/>
+                        <constraint firstItem="3Sq-KY-8BG" firstAttribute="height" secondItem="Unm-0p-2ud" secondAttribute="height" id="fo1-iQ-x9h"/>
+                        <constraint firstItem="3Sq-KY-8BG" firstAttribute="width" secondItem="Unm-0p-2ud" secondAttribute="width" id="wNm-HS-xzv"/>
+                        <constraint firstAttribute="bottom" secondItem="3Sq-KY-8BG" secondAttribute="bottom" id="ylr-V5-cST"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Unm-0p-2ud" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FdM-cT-Jfc"/>
+                <constraint firstItem="Unm-0p-2ud" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ist-dX-B2I"/>
+                <constraint firstAttribute="trailing" secondItem="Unm-0p-2ud" secondAttribute="trailing" id="Q5w-XM-kaE"/>
+                <constraint firstAttribute="bottom" secondItem="Unm-0p-2ud" secondAttribute="bottom" id="YQC-HX-vC3"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

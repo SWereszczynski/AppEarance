@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.3.0)
+  - EVReflection (4.0.10):
+    - EVReflection/Core (= 4.0.10)
+  - EVReflection/Core (4.0.10)
+  - IQKeyboardManager (4.0.7)
+  - Nimble (5.0.0)
+  - Quick (1.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - EVReflection
+  - IQKeyboardManager
+  - Nimble
+  - Quick
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  EVReflection: 7121685ae97d9cc71a5e858ffd456dba67edbc8d
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+
+PODFILE CHECKSUM: 2b7b7405adba6934c025de9ebb16dad5232ee774
+
+COCOAPODS: 1.1.0.rc.2

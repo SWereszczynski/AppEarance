@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoPreviewViewController" customModule="AppEarance" customModuleProvider="target">
+            <connections>
+                <outlet property="indicatorView" destination="CGz-kZ-jtc" id="NL3-yY-w3s"/>
+                <outlet property="pexelsImageView" destination="WUH-rz-haV" id="l05-0U-emE"/>
+                <outlet property="photosCollectionView" destination="WQf-Qg-K3L" id="JTF-cO-nSz"/>
+                <outlet property="tagTextField" destination="FxZ-ke-BZp" id="HON-dF-c4G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text_field_bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="gkP-w5-OCw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="YW5-NA-qcb"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="185" id="voM-tx-nZE"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FxZ-ke-BZp">
+                    <rect key="frame" x="30" y="55" width="285" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Da5-wt-2GH"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels2x-4cce7fe952927fd2f98bbe2557004d42f728acb638efb6cf5438143aa6a5c161" translatesAutoresizingMaskIntoConstraints="NO" id="WUH-rz-haV">
+                    <rect key="frame" x="-17.5" y="125" width="409" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ASH-22-ZaZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-nh-PBz" customClass="BaseButton" customModule="AppEarance" customModuleProvider="target">
+                    <rect key="frame" x="315" y="55" width="30" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="1sE-j9-X2J"/>
+                        <constraint firstAttribute="height" constant="40" id="2Mj-ra-VCa"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="icon_search"/>
+                    <connections>
+                        <action selector="searchButtonDidTouch:" destination="-1" eventType="touchUpInside" id="QlS-rn-l9J"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WQf-Qg-K3L">
+                    <rect key="frame" x="0.0" y="215" width="375" height="422"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.14399587559999999" green="0.1146231751" blue="0.13065297140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewLayout key="collectionViewLayout" id="UR8-1p-1i8" customClass="PhotosCollectionViewLayout" customModule="AppEarance" customModuleProvider="target"/>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CGz-kZ-jtc">
+                    <rect key="frame" x="169" y="395" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.040053934010152337" green="0.031882675422719643" blue="0.036678876405553874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WUH-rz-haV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6kC-Kh-VhE"/>
+                <constraint firstItem="FxZ-ke-BZp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="9e5-NE-Vk7"/>
+                <constraint firstItem="CGz-kZ-jtc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C3I-6N-fJs"/>
+                <constraint firstItem="FxZ-ke-BZp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="CW6-ou-yfb"/>
+                <constraint firstAttribute="trailing" secondItem="WQf-Qg-K3L" secondAttribute="trailing" id="CqY-VS-sZm"/>
+                <constraint firstItem="WQf-Qg-K3L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FO0-ub-qCr"/>
+                <constraint firstAttribute="trailing" secondItem="FxZ-ke-BZp" secondAttribute="trailing" constant="60" id="HnP-gN-IeO"/>
+                <constraint firstItem="WQf-Qg-K3L" firstAttribute="top" secondItem="gkP-w5-OCw" secondAttribute="bottom" constant="30" id="K7v-o7-eSe"/>
+                <constraint firstItem="qRt-nh-PBz" firstAttribute="leading" secondItem="FxZ-ke-BZp" secondAttribute="trailing" id="NNP-SQ-vIr"/>
+                <constraint firstItem="gkP-w5-OCw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VkE-Ia-eWi"/>
+                <constraint firstAttribute="trailing" secondItem="gkP-w5-OCw" secondAttribute="trailing" id="W9y-LN-cLV"/>
+                <constraint firstItem="CGz-kZ-jtc" firstAttribute="top" secondItem="WUH-rz-haV" secondAttribute="bottom" constant="230" id="gEX-RP-SvL"/>
+                <constraint firstItem="gkP-w5-OCw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m7r-Bm-aS3"/>
+                <constraint firstItem="qRt-nh-PBz" firstAttribute="centerY" secondItem="FxZ-ke-BZp" secondAttribute="centerY" id="rCi-bk-rVe"/>
+                <constraint firstItem="WUH-rz-haV" firstAttribute="top" secondItem="FxZ-ke-BZp" secondAttribute="bottom" constant="30" id="u8a-49-5mw"/>
+                <constraint firstAttribute="bottom" secondItem="CGz-kZ-jtc" secondAttribute="bottom" constant="235" id="yQA-ic-9Fh"/>
+                <constraint firstAttribute="bottom" secondItem="WQf-Qg-K3L" secondAttribute="bottom" constant="30" id="ysm-ja-AI6"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="un7-vK-aKO">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </view>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_search" width="24" height="24"/>
+        <image name="pexels2x-4cce7fe952927fd2f98bbe2557004d42f728acb638efb6cf5438143aa6a5c161" width="409" height="90"/>
+        <image name="text_field_bg-1" width="2965" height="2223"/>
+    </resources>
+</document>
